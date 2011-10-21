@@ -2,7 +2,7 @@
 
 require "sinatra"
 
-MY_NAME = "Bob Robertson"
+MY_NAME = "Bill Rainey"
 LINK_TEXT = <<LINK_TEXT
   Add Links to GitHub, LinkedIn or
   <a href="http://blog.angelbob.com">whatever makes you look good</a>
