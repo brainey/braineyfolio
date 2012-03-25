@@ -29,31 +29,31 @@ LINK_TEXT
 ENTRIES = [
   {
     :professional => true,
-    :tags => [ :lolcode, :enterprise ],
-    :dates => "2008-2010",
-    :organization => "LOLTech, Inc",
-    :description => "LolCRM, very Enterprisey!",
-    :tools => "Lolcode, C++, Rational Rose, darcs",
-    :role => "Senior Ceiling Engineer",
+    :tags => [ :c,  :c++, :perl, :perforce ],
+    :dates => "2011-present",
+    :organization => "Narus",
+    :description => "Massive Packet Capture and Analysis",
+    :tools => 'C, Perforce, Perl, MySQL, Tableau',
+    :role => "Senior Software Engineer",
+    :pictures => <<PICTURES,
+    <a class="fancybox" href="http://onproductmanagement.files.wordpress.com/2007/06/what-enterprise-software-delivers.jpg">
+      <img src="http://onproductmanagement.files.wordpress.com/2007/06/what-enterprise-software-delivers.jpg" alt="Enterprise Pyramid" /> </a>
+PICTURES
+  },
+  {
+    :professional => true,
+    :tags => [ :c, :mobile, :linux, :gtk, :smart_phones ],
+    :dates => "2006-2009",
+    :organization => "Palm Source / ACCESS Systems Americas",
+    :description => "Develope a mobile Linux platform for smart phones",
+    :tools => "C, GtK, Perforce",
+    :role => "Senior Software Engineer",
     :pictures => <<PICTURES,
   <a class="fancybox" href="http://scienceblogs.com/gregladen/images/LOLcode_book.jpg">
     <img src="http://scienceblogs.com/gregladen/images/LOLcode_book.jpg" alt="LolCRM 1" /> </a>
   <a class="fancybox" href="http://beerpla.net/wp-content/uploads/TheUltimatePunProgrammingInLOLCODE_11173/image.png">
     <img src="http://beerpla.net/wp-content/uploads/TheUltimatePunProgrammingInLOLCODE_11173/image.png" alt="LOLCrm 2" />
   </a>
-PICTURES
-  },
-  {
-    :professional => true,
-    :tags => [ :ruby, :enterprise ],
-    :dates => "2006-2008",
-    :organization => "Most Enterprisiest, Ltd.",
-    :description => "Management Manager Time Manager",
-    :tools => 'Ruby, XML, <a href="https://github.com/tenderlove/enterprise">Ruby Enterprise</a>, ClearCase',
-    :role => "Enterprise Finagler and Enterpriser",
-    :pictures => <<PICTURES,
-    <a class="fancybox" href="http://onproductmanagement.files.wordpress.com/2007/06/what-enterprise-software-delivers.jpg">
-      <img src="http://onproductmanagement.files.wordpress.com/2007/06/what-enterprise-software-delivers.jpg" alt="Enterprise Pyramid" /> </a>
 PICTURES
   },
   {
