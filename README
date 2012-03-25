@@ -2,6 +2,8 @@ Braineyfolio is a simple Ruby web app for your computer programming
 portfolio.  You can deploy it to Heroku and have a free portfolio up
 and running within about 15 minutes if installing Ruby goes well.
 
+It is directly derived from Noah Gibb's BOBFOLIO.
+
 You should be able to use Braineyfolio with minimal Ruby knowledge, or
 just a bit of knowledge about any similar scripting language like
 JavaScript, Perl or Python.  You're not writing code, just putting
