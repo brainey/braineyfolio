@@ -1,13 +1,13 @@
-Bobfolio is a simple Ruby web app for your computer programming
+Braineyfolio is a simple Ruby web app for your computer programming
 portfolio.  You can deploy it to Heroku and have a free portfolio up
 and running within about 15 minutes if installing Ruby goes well.
 
-You should be able to use Bobfolio with minimal Ruby knowledge, or
+You should be able to use Braineyfolio with minimal Ruby knowledge, or
 just a bit of knowledge about any similar scripting language like
 JavaScript, Perl or Python.  You're not writing code, just putting
 together some data.
 
-INSTALLING BOBFOLIO:
+INSTALLING BRAINEYFOLIO:
 
 First, install git.  On Ubuntu that's something like "apt-get install
 git-core".  On Mac, you've probably already got it, or you can install
@@ -15,6 +15,12 @@ it through MacPorts, Fink, Homebrew or another package manager.
 
 Next, "git clone git://github.com/noahgibbs/bobfolio.git ".  That will
 copy bobfolio into a directory for you to edit.
+
+I copied it to my Sources/braineyfolio/braineyfolio.rb. I updated this
+readme to reflect that change as well as config.ru. I then plan to
+push this to my version of the folio and hopefully not interfer with
+Noah's version. Then at some point I have to update this folio to be
+a reasonable statement of me.
 
 You may need to install Ruby.  If you install Ruby 1.8.X instead of
 1.9.X, you may also need to install RubyGems.  (How do you install
@@ -25,22 +31,22 @@ Afterward, you can use those to install other requirements:
   gem install bundler
   bundle install
 
-RUNNING BOBFOLIO:
+RUNNING BRAINEYFOLIO:
 
-From the command line, type "bundle exec rerun ruby bobfolio.rb".
+From the command line, type "bundle exec rerun ruby braineyfolio.rb".
 That will load a web server, and reload the web server every time you
 change the code (convenient!).
 
 Next, point a web browser at http://localhost:4567 to see what your
 server shows.
 
-EDITING BOBFOLIO
+EDITING BRAINEYFOLIO
 
-Edit bobfolio.rb to include your correct name and the right link text
+Edit braineyfolio.rb to include your correct name and the right link text
 in those variables up at the top.  Hit reload in your browser, and you
 should see the right name in the title, and the right text up top.
 
-Finally, look later in bobfolio.rb.  See ENTRIES?  Those get
+Finally, look later in braineyfolio.rb.  See ENTRIES?  Those get
 automatically turned into the big blocks in your portfolio.
 Cut-and-paste to add more entries to both the personal and
 professional sections.
@@ -51,7 +57,7 @@ can find any unusual information pretty quickly using Google.  ENTRIES
 is just an array of hash tables, very similar to how it's written in
 most other scripting languages (JavaScript, Perl, Python, etc).
 
-DEPLOYING BOBFOLIO:
+DEPLOYING BRAINEYFOLIO:
 
 Sign up for a free account with Heroku.com.  Next, create a Heroku
 app:
@@ -77,7 +83,7 @@ WHERE DO FILES GO?
 
 You can link to sites, images and whatnot with <a href="">, <img> and
 so on, just like you're used to.  Or you can put your own files under
-the public directory in Bobfolio and then link to them there.  For
+the public directory in Braineyfolio and then link to them there.  For
 instance, an image you put into public/images/cat.jpg could be linked
 as /images/cat.jpg from HTML in your ENTRIES.
 
