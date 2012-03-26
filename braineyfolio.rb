@@ -26,6 +26,13 @@ LINK_TEXT
 # Those things with the colon on the front are symbols.  They're
 # basically like strings as far as you're concerned.
 
+TAGS = {
+  :c => "C",
+  :cplusplus => "C++",
+  :perl => "Perl",
+  :perforce => "Perforce"
+}
+
 ENTRIES = [
   {
     :professional => true,
@@ -76,5 +83,6 @@ PICTURES
 get "/" do
   erb :index, :locals => { :MY_NAME => MY_NAME,
                            :LINK_TEXT => LINK_TEXT,
-                           :ENTRIES => ENTRIES }
+                           :ENTRIES => ENTRIES,
+                           :TAGS => TAGS }
 end
