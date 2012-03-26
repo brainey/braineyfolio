@@ -56,6 +56,7 @@ var last_tag_selected = "nobody_at_all";
 var tags_shown = {};
 var project_fields = {organization:1, description:1, tools:1, role:1,
                       dates:1, pictures:1};
+var tag_labels = { <% TAG_LABELS.keys.each do |tag| %><%= tag %>:"<%=TAG_LABELS[tag]%>",<% end %>};
 
 function radio_div_click(radio_div) {
   var new_selected = radio_div.attr("id");
@@ -91,7 +92,7 @@ function radio_div_click(radio_div) {
     $('<a href="#' + last_selected + '/' + tag +
       '"><div id="' + last_selected + '_' + tag +
       '" class="radio_tag_div shadow ' + last_selected + '_gradient">' +
-      tag + "</div></a>").appendTo("#tagbox");
+      (tag_labels[tag] !== undefined ? tag_labels[tag] : tag) + "</div></a>").appendTo("#tagbox");
   }
 }
 
@@ -101,7 +102,8 @@ function radio_tag_div_click(radio_tag_div) {
 
   $("#tagbox").animate({top: "+=10"}, 'fast').animate({top: "-=10"}, 'fast');
 
-  var text = radio_tag_div.html();
+  var tags = new_selected.match(/^[^_]+_(.+)/);
+  var text = tags[1];
   var elts = $("." + last_selected);
   var sub_elts;
   var not_sub_elts;
@@ -171,7 +173,7 @@ $(function() {
 </script>
 
 <div class="buttonbox">
-  <a href="#professional/all"><div id="professional" class="radio_div">Pro1fessional</div></a>
+  <a href="#professional/all"><div id="professional" class="radio_div">Professional</div></a>
   <a href="#personal/all"><div id="personal" class="radio_div">Personal</div></a>
 </div>
 <div id="tagbox"> </div> <!-- For sub-buttons -->

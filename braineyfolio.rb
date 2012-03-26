@@ -26,18 +26,22 @@ LINK_TEXT
 # Those things with the colon on the front are symbols.  They're
 # basically like strings as far as you're concerned.
 
-TAGS = {
+TAG_LABELS = {
   :c => "C",
   :cplusplus => "C++",
   :perl => "Perl",
-  :perforce => "Perforce"
+  :perforce => "Perforce",
+  :mobile => "Mobile",
+  :smart_phone => "Smart Phone",
+  :linux => "Linux",
+  :gtk => "Gtk",
+  :networking => "Networking"
 }
 
 ENTRIES = [
   {
     :professional => true,
-    :tags => [ :c,  :cplusplus, :perl, :perforce ],
-    :cplusplus => "C++",
+    :tags => [ :c,  :linux, :networking, :cplusplus, :perl, :perforce ],
     :dates => "2011-present",
     :organization => "Narus",
     :description => "Massive Packet Capture and Analysis",
@@ -50,7 +54,7 @@ PICTURES
   },
   {
     :professional => true,
-    :tags => [ :c, :mobile, :linux, :gtk, :smart_phones, :perforce ],
+    :tags => [ :c, :mobile, :linux, :gtk, :smart_phone, :perforce ],
     :dates => "2006-2009",
     :organization => "Palm Source / ACCESS Systems Americas",
     :description => "Develope a mobile Linux platform for smart phones",
@@ -84,5 +88,5 @@ get "/" do
   erb :index, :locals => { :MY_NAME => MY_NAME,
                            :LINK_TEXT => LINK_TEXT,
                            :ENTRIES => ENTRIES,
-                           :TAGS => TAGS }
+                           :TAG_LABELS => TAG_LABELS }
 end
