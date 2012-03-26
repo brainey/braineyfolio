@@ -29,11 +29,12 @@ LINK_TEXT
 ENTRIES = [
   {
     :professional => true,
-    :tags => [ :c,  :"C++", :perl, :perforce ],
+    :tags => [ :c,  :cplusplus, :perl, :perforce ],
+    :cplusplus => "C++",
     :dates => "2011-present",
     :organization => "Narus",
     :description => "Massive Packet Capture and Analysis",
-    :tools => 'C, Perforce, Perl, MySQL, Tableau',
+    :tools => 'C, C++, Perforce, Perl, MySQL, Tableau',
     :role => "Senior Software Engineer",
     :pictures => <<PICTURES,
     <a class="fancybox" href="http://onproductmanagement.files.wordpress.com/2007/06/what-enterprise-software-delivers.jpg">
@@ -46,7 +47,7 @@ PICTURES
     :dates => "2006-2009",
     :organization => "Palm Source / ACCESS Systems Americas",
     :description => "Develope a mobile Linux platform for smart phones",
-    :tools => "C, GtK, Perforce",
+    :tools => "C, GtK, Perforce, JavaScript",
     :role => "Senior Software Engineer",
     :pictures => <<PICTURES,
   <a class="fancybox" href="http://scienceblogs.com/gregladen/images/LOLcode_book.jpg">
