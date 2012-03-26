@@ -29,7 +29,7 @@ LINK_TEXT
 ENTRIES = [
   {
     :professional => true,
-    :tags => [ :c,  :cplusplus, :perl, :perforce ],
+    :tags => [ :c,  "C++", :perl, :perforce ],
     :dates => "2011-present",
     :organization => "Narus",
     :description => "Massive Packet Capture and Analysis",
@@ -42,7 +42,7 @@ PICTURES
   },
   {
     :professional => true,
-    :tags => [ :c, :mobile, :linux, :gtk, :smart_phones ],
+    :tags => [ :c, :mobile, :linux, :gtk, :smart_phones, :perforce ],
     :dates => "2006-2009",
     :organization => "Palm Source / ACCESS Systems Americas",
     :description => "Develope a mobile Linux platform for smart phones",
