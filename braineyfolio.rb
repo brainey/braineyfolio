@@ -29,7 +29,7 @@ LINK_TEXT
 ENTRIES = [
   {
     :professional => true,
-    :tags => [ :c,  "C++", :perl, :perforce ],
+    :tags => [ :c,  :"C++", :perl, :perforce ],
     :dates => "2011-present",
     :organization => "Narus",
     :description => "Massive Packet Capture and Analysis",
